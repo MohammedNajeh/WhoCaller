@@ -14,6 +14,8 @@
 		D9DDD9922202EF980037069E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DDD9902202EF980037069E /* LaunchScreen.storyboard */; };
 		D9DDD99D2202EF980037069E /* WhoCaller1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDD99C2202EF980037069E /* WhoCaller1Tests.swift */; };
 		D9DDD9A82202EF980037069E /* WhoCaller1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDD9A72202EF980037069E /* WhoCaller1UITests.swift */; };
+		D9DDD9B62202F2750037069E /* EnteringNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDD9B52202F2750037069E /* EnteringNumbersViewController.swift */; };
+		D9DDD9BC220323BF0037069E /* RegistriationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DDD9BB220323BF0037069E /* RegistriationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D9DDD9A32202EF980037069E /* WhoCaller1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhoCaller1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DDD9A72202EF980037069E /* WhoCaller1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoCaller1UITests.swift; sourceTree = "<group>"; };
 		D9DDD9A92202EF980037069E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DDD9B52202F2750037069E /* EnteringNumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteringNumbersViewController.swift; sourceTree = "<group>"; };
+		D9DDD9BB220323BF0037069E /* RegistriationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistriationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D9DDD9872202EF980037069E /* AppDelegate.swift */,
 				D9DDD9892202EF980037069E /* ViewController.swift */,
 				D9DDD98B2202EF980037069E /* Main.storyboard */,
+				D9DDD9BB220323BF0037069E /* RegistriationViewController.swift */,
+				D9DDD9B52202F2750037069E /* EnteringNumbersViewController.swift */,
 				D9DDD98E2202EF980037069E /* Assets.xcassets */,
 				D9DDD9902202EF980037069E /* LaunchScreen.storyboard */,
 				D9DDD9932202EF980037069E /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DDD98A2202EF980037069E /* ViewController.swift in Sources */,
+				D9DDD9BC220323BF0037069E /* RegistriationViewController.swift in Sources */,
 				D9DDD9882202EF980037069E /* AppDelegate.swift in Sources */,
+				D9DDD9B62202F2750037069E /* EnteringNumbersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +515,7 @@
 				D9DDD9AE2202EF980037069E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9DDD9AF2202EF980037069E /* Build configuration list for PBXNativeTarget "WhoCaller1Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				D9DDD9B12202EF980037069E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9DDD9B22202EF980037069E /* Build configuration list for PBXNativeTarget "WhoCaller1UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				D9DDD9B42202EF980037069E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
