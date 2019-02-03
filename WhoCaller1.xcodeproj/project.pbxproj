@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					D9DDD9832202EF980037069E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 53T26TS8N6;
 						ProvisioningStyle = Automatic;
 					};
 					D9DDD9972202EF980037069E = {
@@ -422,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53T26TS8N6;
 				INFOPLIST_FILE = WhoCaller1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.WhoCaller1;
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53T26TS8N6;
 				INFOPLIST_FILE = WhoCaller1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mm.WhoCaller1;

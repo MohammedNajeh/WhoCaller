@@ -198,9 +198,13 @@ enter your phone number</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-CY-cVD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nageh-1" translatesAutoresizingMaskIntoConstraints="NO" id="oue-0u-Bv3">
-                                        <rect key="frame" x="61" y="21" width="254" height="192"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-circular-button" translatesAutoresizingMaskIntoConstraints="NO" id="oue-0u-Bv3">
+                                        <rect key="frame" x="85" y="21" width="218" height="201"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Vi1-ry-ate" appends="YES" id="yQ1-ke-sQy"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDb-Iu-WmF">
                                         <rect key="frame" x="59" y="299" width="306" height="48"/>
@@ -267,14 +271,21 @@ enter your phone number</string>
                         <outlet property="MailField" destination="1GD-AX-HEz" id="8cu-U6-n7j"/>
                         <outlet property="PassordTextField" destination="gDb-Iu-WmF" id="cg3-cD-VHE"/>
                         <outlet property="nameTextField" destination="YTA-uv-ZBZ" id="C1G-5T-VE1"/>
+                        <outlet property="profilePic" destination="oue-0u-Bv3" id="ebf-cU-ECA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WM-by-ocR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vi1-ry-ate">
+                    <connections>
+                        <action selector="ImportImage:" destination="x5b-8i-dRO" id="KMh-Ig-ceB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="217" y="99"/>
+            <point key="canvasLocation" x="216.80000000000001" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
+        <image name="add-circular-button" width="120" height="120"/>
         <image name="identification" width="120" height="120"/>
         <image name="location" width="52" height="72"/>
         <image name="lock" width="128" height="128"/>

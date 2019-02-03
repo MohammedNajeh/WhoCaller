@@ -8,8 +8,9 @@
 
 import UIKit
 
-class RegistriationViewController: UIViewController {
+class RegistriationViewController: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
+    @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var PassordTextField: UITextField!
     
@@ -21,14 +22,30 @@ class RegistriationViewController: UIViewController {
          nameTextField.underline()
          PassordTextField.underline()
          MailField.underline()
+         self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 2;
+         self.profilePic.clipsToBounds = true
+
+         //self.profilePic.layer.cornerRadius=10.0
       
         
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let selectedImage=info[UIImagePickerControllerOriginalImage] as! UIImage
+        profilePic.image = selectedImage
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func ImportImage(_ sender: UITapGestureRecognizer) {
+        let imagePickeController = UIImagePickerController()
+        imagePickeController.sourceType = .photoLibrary
+        imagePickeController.delegate=self
+        present(imagePickeController, animated: true, completion: nil)
+        
     }
 }
 extension UITextField {
