@@ -43,6 +43,7 @@ class RegistriationViewController: UIViewController ,UIImagePickerControllerDele
     @IBAction func ImportImage(_ sender: UITapGestureRecognizer) {
         let imagePickeController = UIImagePickerController()
         imagePickeController.sourceType = .photoLibrary
+        imagePickeController.allowsEditing = true
         imagePickeController.delegate=self
         present(imagePickeController, animated: true, completion: nil)
         
