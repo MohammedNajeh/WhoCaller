@@ -11,6 +11,8 @@ import CoreLocation
 class EnteringNumbersViewController: UIViewController , CLLocationManagerDelegate{
     let locationManager = CLLocationManager()
     let geoCoder = CLGeocoder()
+    
+    
 
     @IBOutlet weak var CountryTextField: UITextField!
     @IBOutlet weak var NumberTextField: UITextField!
